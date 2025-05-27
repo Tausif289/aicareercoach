@@ -8,9 +8,10 @@ import { Toaster } from "sonner";
 import './globals.css'
 import Footer from "@/components/footer";
 
-const inter= Inter({
-  subset:["latin"]
-});
+const inter = Inter({
+  subsets: ['latin'], // Add this line
+  preload: true,      // Optional, default is true
+})
 
 export const metadata = {
   title: "AI career coach",
